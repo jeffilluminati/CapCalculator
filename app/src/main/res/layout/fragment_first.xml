@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select your Subjects"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <CheckBox
+            android:id="@+id/mathBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Math" />
+
+        <CheckBox
+            android:id="@+id/englishBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:checked="true"/>
+
+        <CheckBox
+            android:id="@+id/chemistryBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chemistry" />
+
+        <CheckBox
+            android:id="@+id/physicsBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physics" />
+
+        <CheckBox
+            android:id="@+id/computingBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Computing Studies" />
+
+        <CheckBox
+            android:id="@+id/motherTongueBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mother Tongue" />
+
+        <CheckBox
+            android:id="@+id/artBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Art" />
+
+        <CheckBox
+            android:id="@+id/musicBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Music" />
+
+        <CheckBox
+            android:id="@+id/geographyBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geography" />
+
+        <CheckBox
+            android:id="@+id/historyBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
