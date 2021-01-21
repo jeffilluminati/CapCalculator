@@ -41,7 +41,7 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        linearLayout = view?.findViewById<LinearLayout>(R.id.LinearLayout)
+        linearLayout = view.findViewById<LinearLayout>(R.id.LinearLayout)
 
         for (s in param!!) {
             createField(s!!, linearLayout!!)
@@ -78,13 +78,13 @@ class SecondFragment : Fragment() {
 
             dialogBuilder.setMessage("Please input information correctly")
                     .setCancelable(false)
-                    .setPositiveButton("Ok", DialogInterface.OnClickListener {
+                    .setPositiveButton("Ok", {
                         dialog, id -> dialog.cancel()
                     })
 
             val alert = dialogBuilder.create()
 
-            alert.setTitle("AlertDialog")
+            alert.setTitle("Error!")
 
             alert.show()
         }
